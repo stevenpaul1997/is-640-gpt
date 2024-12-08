@@ -4,7 +4,7 @@ from data import Data
 from model import GPTLanguageModel
 
 RANDOM_SEED = 1337
-TRAIN_ITERATIONS = 100
+TRAIN_ITERATIONS = 10000
 WORD_COUNT = 100
 DATA_FILE = "input.txt"
 
@@ -21,6 +21,7 @@ def main():
     generated = model.generate(context, WORD_COUNT)[0].tolist()
 
     print(data.decode(generated))
+
 
 if __name__ == "__main__":
     main()
