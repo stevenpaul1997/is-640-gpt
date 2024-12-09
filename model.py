@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
+# add Class Head File
 class Head(nn.Module):
     def __init__(self, n_embd, n_head):
         super().__init__()
@@ -12,7 +12,7 @@ class Head(nn.Module):
 
     def forward(self, x):
         return self.attn(x, x, x)[0]
-
+# add class Feed Forward
 class FeedForward(nn.Module):
     def __init__(self, n_embd):
         super().__init__()
@@ -22,7 +22,7 @@ class FeedForward(nn.Module):
     def forward(self, x):
         x = F.relu(self.fc1(x))
         return self.fc2(x)
-
+#add Class Block
 class Block(nn.Module):
     def __init__(self, n_embd, n_head):
         super().__init__()
