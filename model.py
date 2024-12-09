@@ -34,7 +34,7 @@ class Block(nn.Module):
         return self.ff(x) + x
 
 class GPTLanguageModel(nn.Module):
-    def __init__(self, vocab_size, n_embd=32, n_head=4, n_layer=3):
+    def __init__(self, vocab_size, n_embd=6, n_head=2, n_layer=3):
         super().__init__()
         self.token_embeddings = nn.Embedding(vocab_size, n_embd)
         self.blocks = nn.ModuleList([Block(n_embd, n_head) for _ in range(n_layer)])
