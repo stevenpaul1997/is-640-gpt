@@ -22,7 +22,6 @@ class static_variables() :
     dropout = 0.2
 
 
-#this is main part 
 
 def main():
 
@@ -32,7 +31,7 @@ def main():
     model = GPTLanguageModel(data.vocab_size,static_variables)
     trainer = Trainer(data.get_data(), model,static_variables)
     context =trainer.train(static_variables.MAX_ITERS)
-    # print(context)
+    
     generated = model.generate(context, static_variables.WORD_COUNT)[0].tolist()
     print(data.decode(generated))
 
