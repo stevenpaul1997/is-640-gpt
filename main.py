@@ -14,7 +14,7 @@ class static_variables() :
     LEARNING_RATE = 1E-3
     EVAL_ITERS = 200
     RANDOM_SEED = 1337
-    WORD_COUNT = 10000
+    WORD_COUNT = 150
     n_embd =  64
     n_head =  4
     n_layer =  4
