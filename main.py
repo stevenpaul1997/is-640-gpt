@@ -9,7 +9,7 @@ class static_variables() :
 
     BATCH_SIZE = 16 
     BLOCK_SIZE = 32 
-    MAX_ITERS = 1000
+    MAX_ITERS = 10000
     EVAL_INTERVAL = 1000
     LEARNING_RATE = 1E-3
     EVAL_ITERS = 200
