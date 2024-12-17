@@ -56,7 +56,7 @@ class Trainer() :
             # every once in a while evaluate the loss on train and val sets
             if iter % EVAL_INTERVAL == 0:
                 losses = self.__estimate_loss()
-                # print(f"step {iter}: train loss {losses['train']:.4f}, val loss {losses['val']:.4f}")
+                print(f"step {iter}: train loss {losses['train']:.4f}, val loss {losses['val']:.4f}")
 
             # sample a batch of data
             xb, yb = self.__get_batch('train')
