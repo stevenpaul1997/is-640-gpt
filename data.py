@@ -17,4 +17,5 @@ class Data:
     def get_data(self):
         return torch.tensor(self.encode(self.text), dtype=torch.long)
     
+    
 
