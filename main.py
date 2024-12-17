@@ -5,7 +5,7 @@ from model import GPTLanguageModel
  
 
 
-MAX_ITERS = 100
+MAX_ITERS = 1000
 RANDOM_SEED = 1337
 WORD_COUNT = 100
 DATA_FILE = "input.txt"
