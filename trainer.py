@@ -66,7 +66,7 @@ class Trainer() :
             loss.backward()
             self.optimizer.step()
         
-        print(f"Final train loss {losses['train']:.4f}, Final val loss {losses['val']:.4f}")
+        #print(f"Final train loss {losses['train']:.4f}, Final val loss {losses['val']:.4f}")
 
         # generate from the model
         return  torch.zeros((1, 1), dtype=torch.long, device=device)
